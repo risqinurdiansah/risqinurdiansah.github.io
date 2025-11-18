@@ -1,0 +1,79 @@
+/* Tablet Devices */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .profile-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .floating-card {
+        /* Di tablet, perkecil dan reposisi */
+        transform: scale(0.9);
+        padding: 10px 15px;
+        min-width: 120px;
+    }
+
+    .card-1 {
+        top: 20px;
+        right: 30px;
+    }
+
+    .card-2 {
+        bottom: 40px;
+        right: 10px;
+    }
+
+    .card-3 {
+        top: 120px;
+        left: 20px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .floating-card {
+        /* Di mobile, sembunyikan atau perkecil lagi */
+        transform: scale(0.8);
+        padding: 8px 12px;
+        min-width: 110px;
+        font-size: 0.8rem;
+    }
+
+    .card-1 {
+        top: 15px;
+        right: 20px;
+    }
+
+    .card-2 {
+        bottom: 30px;
+        right: 5px;
+    }
+
+    .card-3 {
+        top: 100px;
+        left: 15px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .floating-card {
+        /* Di mobile kecil, sembunyikan floating card */
+        display: none;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+}
